@@ -1,5 +1,3 @@
-postCode = "DH1 3YJ"
-
 function postcodeToCoord(postCode){
     postCode = postCode.replace(" ", "+")
     const Http = new XMLHttpRequest();
@@ -11,9 +9,7 @@ function postcodeToCoord(postCode){
         JSONobj = JSON.parse(Http.responseText)
         latitude = JSONobj.data.attributes.location.lat
         longitude = JSONobj.data.attributes.location.lon
-        
+
         return(latitude, longitude)
     }
 }
-
-postcodeToCoord(postCode)

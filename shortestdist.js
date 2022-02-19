@@ -1,9 +1,3 @@
-startlat = -1.584512
-startlong = 54.775413
-
-endlat = -1.571399
-endlong = 54.781126
-
 function getDist(sLat, sLong, eLat, eLong){
     const Http = new XMLHttpRequest();
     const url=`http://router.project-osrm.org/route/v1/car/${sLat},${sLong};${eLat},${eLong}?overview=false`
@@ -16,5 +10,3 @@ function getDist(sLat, sLong, eLat, eLong){
         return(distance)
     }
 }
-
-getDist(startlat, startlong, endlat, endlong)

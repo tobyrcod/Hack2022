@@ -1,6 +1,3 @@
-from operator import index
-from turtle import distance
-from xml.etree.ElementTree import Element
 import requests
 import json
 import math

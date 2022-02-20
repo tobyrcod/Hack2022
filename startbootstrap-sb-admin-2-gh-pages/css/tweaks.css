@@ -1,0 +1,17 @@
+#postCodeLbl{
+    color: grey;
+    margin: auto;
+    width: 50%;
+
+}
+#submitBtn, #postCode{
+    display: inline-block;
+    margin: auto;
+    width: 50%;
+}
+
+.row{
+    display: inline;
+    margin: auto;
+    width:50%;
+}

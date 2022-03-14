@@ -4,7 +4,7 @@ function getDist(sLat, sLong, eLat, eLong){
     Http.open("GET", url);
     Http.send();
 
-    Http.onreadystatechange=e=>{
+    if(Http.status === 200){
         JSONobj = JSON.parse(Http.responseText)
         distance = JSONobj.routes[0].legs[0].distance
         return(distance)
